@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotoCare - Two Wheeler Maintenance Advisor</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<!-- nav part -->
+<header class="tophead">
+    <div class="logo">
+    <h1>MotoCare</h1>
+      <p>Two-Wheeler Service &amp; Cost Helper</p>
+    </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+        <li><a href="#bikes">Bikes</a></li>
+      <li><a href="#service">Service Check</a></li>
+      <li><a href="#fuel">Fuel Cost</a></li>
+       <li><a href="#diy">DIY Tips</a></li>
+      <li><a href="#log">My Log</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main>
+
+  <section id="home" class="hero">
+      <div class="herotext">
+      <h2>Keep Your Bike Healthy &amp; Save Money</h2>
+      <p>Check when your engine oil, air filter, brakes or chain need work across 24 Indian scooters and bikes. Calculate monthly petrol expense and keep a simple service record right here without any login.</p>
+        <a href="#service" class="mainbtn">Check Service Now</a>
+      <a href="#fuel" class="secbtn">Fuel Calculator</a>
+      </div>
+  </section>
+
+
+
+<section id="bikes" class="sec">
+  <h2 class="heading">Supported Two-Wheelers (24 Models)</h2>
+  <p class="subtxt">Pick a category below to browse scooters, commuters, 150-250cc and 300-500cc bikes.</p>
+
+  <div class="fbtns segbar">
+    <button type="button" class="fbtn activebtn" id="segall">All (24)</button>
+      <button type="button" class="fbtn" id="segsc">Scooters (6)</button>
+    <button type="button" class="fbtn" id="segcm">Commuters (5)</button>
+    <button type="button" class="fbtn" id="segmd">150-250cc (7)</button>
+      <button type="button" class="fbtn" id="segbg">300-500cc (6)</button>
+  </div>
+
+  <div class="bikecards">
+    <article class="bcard seg-sc">
+      <span class="tag">Scooter</span>
+      <img src="images/activa.jpg" alt="Honda Activa 6G scooter">
+      <h3>Honda Activa 6G</h3>
+      <p>110cc | Avg Mileage: 47 km/l</p>
+      <ul>
+        <li>Oil Change: 4000 km</li>
+        <li>Air Filter: 12000 km</li>
+        <li>CVT Belt: 15000 km</li>
+      </ul>
+    </article>
+  <article class="bcard seg-sc">
+    <span class="tag">Scooter</span>
+    <img alt="TVS Jupiter 110 scooter" src="images/jupiter.jpg">
+    <h3>TVS Jupiter 110</h3>
+    <p>113cc | Avg Mileage: 49 km/l</p>
+    <ul>
+    <li>Oil Change: 3500 km</li>
+    <li>Air Filter: 10000 km</li>
+    <li>CVT Belt: 15000 km</li>
+    </ul>
+  </article>
+    <article class="bcard seg-sc">
+      <span class="tag">Scooter</span>
+      <img src="images/access125.jpg" alt="Suzuki Access 125 scooter">
+      <h3>Suzuki Access 125</h3>
+      <p>124cc | Avg Mileage: 46 km/l</p>
+      <ul>
+      <li>Oil Change: 4000 km</li>
+      <li>Air Filter: 10000 km</li>
+      <li>CVT Belt: 15000 km</li>
+      </ul>
+    </article>
+
+   <article class="bcard seg-sc">
+     <span class="tag">Scooter</span>
+     <img src="images/ntorq125.jpg" alt="TVS Ntorq 125 scooter">
+     <h3>TVS Ntorq 125</h3>
+     <p>125cc | Avg Mileage: 42 km/l</p>
+     <ul>
+       <li>Oil Change: 3500 km</li>
+       <li>Air Filter: 10000 km</li>
+       <li>CVT Belt: 15000 km</li>
+     </ul>
+   </article>
+    <article class="bcard seg-sc">
+      <span class="tag">Scooter</span>
+      <img src="images/burgman125.jpg" alt="Suzuki Burgman Street 125 scooter">
+      <h3>Suzuki Burgman 125</h3>
+      <p>124cc | Avg Mileage: 45 km/l</p>
+      <ul>
+      <li>Oil Change: 4000 km</li>
+      <li>Air Filter: 10000 km</li>
+      <li>CVT Belt: 15000 km</li>
+      </ul>
+    </article>
+  <article class="bcard seg-sc">
+    <span class="tag">Scooter</span>
+    <img alt="Yamaha Aerox 155 maxi scooter" src="images/aerox155.jpg">
+    <h3>Yamaha Aerox 155</h3>
+    <p>155cc | Avg Mileage: 40 km/l</p>
+    <ul>
+    <li>Oil Change: 4000 km</li>
+    <li>Air Filter: 10000 km</li>
+    <li>CVT Belt: 20000 km</li>
+    </ul>
+  </article>
+
+    <article class="bcard seg-cm">
+      <span class="tag">Commuter</span>
+      <img src="images/splendor.jpg" alt="Hero Splendor Plus bike">
+      <h3>Hero Splendor+</h3>
+      <p>97cc | Avg Mileage: 62 km/l</p>
+      <ul>
+        <li>Oil Change: 3000 km</li>
+        <li>Air Filter: 10000 km</li>
+        <li>Chain Lube: 500 km</li>
+      </ul>
+    </article>
+  <article class="bcard seg-cm">
+    <span class="tag">Commuter</span>
+    <img src="images/platina110.jpg" alt="Bajaj Platina 110 bike">
+    <h3>Bajaj Platina 110</h3>
+    <p>115cc | Avg Mileage: 65 km/l</p>
+    <ul>
+    <li>Oil Change: 3500 km</li>
+    <li>Air Filter: 10000 km</li>
+    <li>Chain Lube: 500 km</li>
+    </ul>
+  </article>
+    <article class="bcard seg-cm">
+      <span class="tag">Commuter</span>
+      <img src="images/shine125.jpg" alt="Honda Shine 125 bike">
+      <h3>Honda Shine 125</h3>
+      <p>124cc | Avg Mileage: 55 km/l</p>
+      <ul>
+      <li>Oil Change: 4000 km</li>
+      <li>Air Filter: 12000 km</li>
+      <li>Chain Lube: 500 km</li>
+      </ul>
+    </article>
+
+   <article class="bcard seg-cm">
+     <span class="tag">Commuter</span>
+     <img alt="TVS Raider 125 bike" src="images/raider125.jpg">
+     <h3>TVS Raider 125</h3>
+     <p>125cc | Avg Mileage: 56 km/l</p>
+     <ul>
+       <li>Oil Change: 4000 km</li>
+       <li>Air Filter: 10000 km</li>
+       <li>Chain Lube: 500 km</li>
+     </ul>
+   </article>
+    <article class="bcard seg-cm">
+      <span class="tag">Commuter</span>
+      <img src="images/xtreme125r.jpg" alt="Hero Xtreme 125R bike">
+      <h3>Hero Xtreme 125R</h3>
+      <p>125cc | Avg Mileage: 54 km/l</p>
+      <ul>
+      <li>Oil Change: 4000 km</li>
+      <li>Air Filter: 10000 km</li>
+      <li>Chain Lube: 500 km</li>
+      </ul>
+    </article>
+  <article class="bcard seg-md">
+    <span class="tag">Naked</span>
+    <img src="images/pulsar150.jpg" alt="Bajaj Pulsar 150 bike">
+    <h3>Bajaj Pulsar 150</h3>
+    <p>150cc | Avg Mileage: 45 km/l</p>
+    <ul>
+    <li>Oil Change: 4000 km</li>
+    <li>Air Filter: 10000 km</li>
+    <li>Chain Lube: 500 km</li>
+    </ul>
+  </article>
+    <article class="bcard seg-md">
+      <span class="tag">Naked</span>
+      <img src="images/apache160.jpg" alt="TVS Apache RTR 160 4V bike">
+      <h3>TVS Apache RTR 160 4V</h3>
+      <p>160cc | Avg Mileage: 44 km/l</p>
+      <ul>
+        <li>Oil Change: 4000 km</li>
+        <li>Air Filter: 10000 km</li>
+        <li>Chain Lube: 500 km</li>
+      </ul>
+    </article>
+
+  <article class="bcard seg-md">
+    <span class="tag">Naked</span>
+    <img alt="Yamaha MT-15 V2 bike" src="images/mt15.jpg">
+    <h3>Yamaha MT-15 V2</h3>
+    <p>155cc | Avg Mileage: 48 km/l</p>
+    <ul>
+    <li>Oil Change: 4000 km</li>
+    <li>Air Filter: 10000 km</li>
+    <li>Chain Lube: 500 km</li>
+    </ul>
+  </article>
+    <article class="bcard seg-md">
+      <span class="tag">Sports</span>
+      <img src="images/r15v4.jpg" alt="Yamaha R15 V4 sports bike">
+      <h3>Yamaha R15 V4</h3>
+      <p>155cc | Avg Mileage: 45 km/l</p>
+      <ul>
+      <li>Oil Change: 4000 km</li>
+      <li>Air Filter: 10000 km</li>
+      <li>Chain Lube: 500 km</li>
+      </ul>
+    </article>
+   <article class="bcard seg-md">
+     <span class="tag">Naked</span>
+     <img src="images/duke200.jpg" alt="KTM 200 Duke bike">
+     <h3>KTM 200 Duke</h3>
+     <p>200cc | Avg Mileage: 35 km/l</p>
+     <ul>
+       <li>Oil Change: 5000 km</li>
+       <li>Air Filter: 10000 km</li>
+       <li>Chain Lube: 500 km</li>
+     </ul>
+   </article>
+    <article class="bcard seg-md">
+      <span class="tag">Naked</span>
+      <img src="images/pulsarn250.jpg" alt="Bajaj Pulsar N250 bike">
+      <h3>Bajaj Pulsar N250</h3>
+      <p>249cc | Avg Mileage: 36 km/l</p>
+      <ul>
+      <li>Oil Change: 5000 km</li>
+      <li>Air Filter: 10000 km</li>
+      <li>Chain Lube: 500 km</li>
+      </ul>
+    </article>
+  <article class="bcard seg-md">
+    <span class="tag">Sports</span>
+    <img alt="Suzuki Gixxer SF 250 sports bike" src="images/gixxer250.jpg">
+    <h3>Suzuki Gixxer SF 250</h3>
+    <p>249cc | Avg Mileage: 36 km/l</p>
+    <ul>
+    <li>Oil Change: 5000 km</li>
+    <li>Air Filter: 10000 km</li>
+    <li>Chain Lube: 500 km</li>
+    </ul>
+  </article>
+
+    <article class="bcard seg-bg">
+      <span class="tag">Cruiser</span>
+      <img src="images/classic350.jpg" alt="Royal Enfield Classic 350 bike">
+      <h3>RE Classic 350</h3>
+      <p>349cc | Avg Mileage: 35 km/l</p>
+      <ul>
+        <li>Oil Change: 5000 km</li>
+        <li>Air Filter: 10000 km</li>
+        <li>Chain Lube: 500 km</li>
+      </ul>
+    </article>
+  <article class="bcard seg-bg">
+    <span class="tag">Cruiser</span>
+    <img src="images/cb350.jpg" alt="Honda Hness CB350 bike">
+    <h3>Honda H'ness CB350</h3>
+    <p>348cc | Avg Mileage: 36 km/l</p>
+    <ul>
+    <li>Oil Change: 6000 km</li>
+    <li>Air Filter: 12000 km</li>
+    <li>Chain Lube: 500 km</li>
+    </ul>
+  </article>
+    <article class="bcard seg-bg">
+      <span class="tag">Roadster</span>
+      <img src="images/speed400.jpg" alt="Triumph Speed 400 bike">
+      <h3>Triumph Speed 400</h3>
+      <p>398cc | Avg Mileage: 29 km/l</p>
+      <ul>
+      <li>Oil Change: 6000 km</li>
+      <li>Air Filter: 6000 km</li>
+      <li>Chain Lube: 500 km</li>
+      </ul>
+    </article>
+
+   <article class="bcard seg-bg">
+     <span class="tag">Naked</span>
+     <img alt="KTM 390 Duke bike" src="images/duke390.jpg">
+     <h3>KTM 390 Duke</h3>
+     <p>399cc | Avg Mileage: 26 km/l</p>
+     <ul>
+       <li>Oil Change: 5000 km</li>
+       <li>Air Filter: 7500 km</li>
+       <li>Chain Lube: 500 km</li>
+     </ul>
+   </article>
+    <article class="bcard seg-bg">
+      <span class="tag">Adventure</span>
+      <img src="images/himalayan450.jpg" alt="Royal Enfield Himalayan 450 bike">
+      <h3>RE Himalayan 450</h3>
+      <p>452cc | Avg Mileage: 28 km/l</p>
+      <ul>
+      <li>Oil Change: 5000 km</li>
+      <li>Air Filter: 10000 km</li>
+      <li>Chain Lube: 500 km</li>
+      </ul>
+    </article>
+  <article class="bcard seg-bg">
+    <span class="tag">Sports</span>
+    <img src="images/rs457.jpg" alt="Aprilia RS 457 sports bike">
+    <h3>Aprilia RS 457</h3>
+    <p>457cc | Avg Mileage: 25 km/l</p>
+    <ul>
+    <li>Oil Change: 6000 km</li>
+    <li>Air Filter: 12000 km</li>
+    <li>Chain Lube: 500 km</li>
+    </ul>
+  </article>
+  </div>
+</section>
+
+
+<!-- service check -->
+<section id="service" class="sec altbg">
+  <div class="inner">
+  <h2 class="heading">Service Due Estimator</h2>
+    <p class="subtxt">Pick your vehicle and put current odometer reading to see what is due.</p>
+
+  <div class="box1">
+      <div class="inpgrp">
+        <label for="bname">Select Two-Wheeler:</label>
+        <select id="bname">
+          <option value="activa">Honda Activa 6G (Scooter)</option>
+        <option value="jupiter">TVS Jupiter 110 (Scooter)</option>
+          <option value="access">Suzuki Access 125 (Scooter)</option>
+          <option value="ntorq">TVS Ntorq 125 (Scooter)</option>
+        <option value="burgman">Suzuki Burgman 125 (Scooter)</option>
+          <option value="aerox">Yamaha Aerox 155 (Scooter)</option>
+
+          <option value="splendor">Hero Splendor+ (Commuter)</option>
+        <option value="platina">Bajaj Platina 110 (Commuter)</option>
+          <option value="shine">Honda Shine 125 (Commuter)</option>
+          <option value="raider">TVS Raider 125 (Commuter)</option>
+        <option value="xtreme125">Hero Xtreme 125R (Commuter)</option>
+
+          <option value="pulsar150">Bajaj Pulsar 150 (Naked)</option>
+          <option value="apache160">TVS Apache RTR 160 4V (Naked)</option>
+        <option value="mt15">Yamaha MT-15 V2 (Naked)</option>
+          <option value="r15v4">Yamaha R15 V4 (Sports)</option>
+          <option value="duke200">KTM 200 Duke (Naked)</option>
+        <option value="pulsarn250">Bajaj Pulsar N250 (Naked)</option>
+          <option value="gixxer250">Suzuki Gixxer SF 250 (Sports)</option>
+
+          <option value="classic350">RE Classic 350 (Cruiser)</option>
+        <option value="cb350">Honda H'ness CB350 (Cruiser)</option>
+          <option value="speed400">Triumph Speed 400 (Roadster)</option>
+          <option value="duke390">KTM 390 Duke (Naked)</option>
+        <option value="himalayan450">RE Himalayan 450 (Adventure)</option>
+          <option value="rs457">Aprilia RS 457 (Sports)</option>
+        </select>
+      </div>
+
+    <div class="inpgrp">
+        <label for="odo">Current Odometer (km):</label>
+        <input placeholder="e.g. 9600" id="odo" type="number" min="0">
+    </div>
+
+      <div class="inpgrp">
+        <label for="lastodo">Last Oil Service At (km):</label>
+        <input type="number" id="lastodo" placeholder="e.g. 6000" min="0">
+      </div>
+
+      <button type="button" id="chkbtn" class="mainbtn">Check Status</button>
+  </div>
+
+  <p id="serr" class="errtxt"></p>
+
+  <div id="scards" class="statusrow"></div>
+
+  <div id="stablewrap" class="tblbox">
+      <table id="stbl">
+        <thead>
+          <tr>
+            <th>Part Name</th>
+            <th>Interval (km)</th>
+            <th>Status</th>
+            <th>Approx Cost (Rs)</th>
+          </tr>
+        </thead>
+        <tbody id="stbody">
+          <tr>
+            <td colspan="4">Enter your reading above and click Check Status.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="totbill" class="billtxt"></p>
+  </div>
+  </div>
+</section>
+
+
+<section id="fuel" class="sec">
+  <h2 class="heading">Monthly Commute &amp; Fuel Cost</h2>
+  <p class="subtxt">Find out how much you spend every month compared to auto or cab.</p>
+
+  <div class="twocol">
+    <div class="box1 halfbox">
+        <div class="inpgrp">
+          <label for="fbike">Quick Fill Mileage From Bike:</label>
+          <select id="fbike">
+            <option value="custom">-- Type Own Mileage --</option>
+          <option value="activa">Honda Activa 6G - 47 km/l</option>
+        <option value="jupiter">TVS Jupiter 110 - 49 km/l</option>
+          <option value="access">Suzuki Access 125 - 46 km/l</option>
+          <option value="ntorq">TVS Ntorq 125 - 42 km/l</option>
+        <option value="burgman">Suzuki Burgman 125 - 45 km/l</option>
+          <option value="aerox">Yamaha Aerox 155 - 40 km/l</option>
+
+          <option value="splendor">Hero Splendor+ - 62 km/l</option>
+        <option value="platina">Bajaj Platina 110 - 65 km/l</option>
+          <option value="shine">Honda Shine 125 - 55 km/l</option>
+          <option value="raider">TVS Raider 125 - 56 km/l</option>
+        <option value="xtreme125">Hero Xtreme 125R - 54 km/l</option>
+
+          <option value="pulsar150">Bajaj Pulsar 150 - 45 km/l</option>
+          <option value="apache160">TVS Apache RTR 160 4V - 44 km/l</option>
+        <option value="mt15">Yamaha MT-15 V2 - 48 km/l</option>
+          <option value="r15v4">Yamaha R15 V4 - 45 km/l</option>
+          <option value="duke200">KTM 200 Duke - 35 km/l</option>
+        <option value="pulsarn250">Bajaj Pulsar N250 - 36 km/l</option>
+          <option value="gixxer250">Suzuki Gixxer SF 250 - 36 km/l</option>
+
+          <option value="classic350">RE Classic 350 - 35 km/l</option>
+        <option value="cb350">Honda H'ness CB350 - 36 km/l</option>
+          <option value="speed400">Triumph Speed 400 - 29 km/l</option>
+          <option value="duke390">KTM 390 Duke - 26 km/l</option>
+        <option value="himalayan450">RE Himalayan 450 - 28 km/l</option>
+          <option value="rs457">Aprilia RS 457 - 25 km/l</option>
+          </select>
+        </div>
+
+        <div class="inpgrp">
+          <label for="dist">Daily Round-Trip Distance (km):</label>
+          <input type="number" id="dist" placeholder="e.g. 24" min="1">
+        </div>
+
+      <div class="inpgrp">
+        <label for="days">Riding Days Per Month:</label>
+        <input id="days" type="number" value="22" min="1" max="31">
+      </div>
+
+        <div class="inpgrp">
+          <label for="mil">Real Mileage (km/l):</label>
+          <input type="number" id="mil" placeholder="e.g. 45" min="5">
+        </div>
+
+        <div class="inpgrp">
+          <label for="price">Petrol Price (Rs/litre):</label>
+          <input type="number" id="price" value="101.96" step="0.01" min="1">
+        </div>
+
+        <button type="button" id="fbtn" class="mainbtn">Calculate Cost</button>
+        <p id="ferr" class="errtxt"></p>
+    </div>
+
+    <aside class="asidebox halfbox">
+      <h3>Your Cost Breakdown</h3>
+      <div id="fout">
+        <p>Fill the values on the left and press Calculate Cost to see monthly fuel, maintenance reserve and yearly expense.</p>
+      </div>
+
+      <div class="mediabox">
+        <h4>Quick Pre-Ride Safety Checklist</h4>
+        <ol>
+          <li>Check front and rear tyre pressure weekly.</li>
+          <li>Test both brake levers before moving out.</li>
+          <li>Look under engine for any oil drops.</li>
+          <li>Check chain tightness and lube after rain.</li>
+          <li>Verify headlight, brake light and indicators.</li>
+        </ol>
+
+        <h4>Quick Maintenance Video Clip</h4>
+        <video controls width="100%">
+          <source src="images/chain_tip.mp4" type="video/mp4">
+          Your browser cannot play this video. Place chain_tip.mp4 inside images folder.
+        </video>
+      </div>
+    </aside>
+  </div>
+</section>
+
+
+<section id="diy" class="sec altbg">
+  <div class="inner">
+  <h2 class="heading">DIY Inspection &amp; Symptom Guide</h2>
+  <p class="subtxt">Filter by part or search a problem like noise, hard brake, mileage drop.</p>
+
+  <div class="filterbar">
+      <div class="fbtns">
+        <button type="button" class="fbtn activebtn" id="allbtn">All</button>
+        <button type="button" class="fbtn" id="brkbtn">Brakes</button>
+        <button type="button" class="fbtn" id="chnbtn">Chain</button>
+        <button type="button" class="fbtn" id="engbtn">Engine</button>
+        <button type="button" class="fbtn" id="tyrbtn">Tyres</button>
+      </div>
+
+      <input type="text" id="srch" placeholder="Search symptom...">
+  </div>
+
+  <div id="diylist" class="diycards"></div>
+  </div>
+</section>
+
+
+<!-- log table -->
+<section id="log" class="sec">
+  <h2 class="heading">Personal Service Log</h2>
+  <p class="subtxt">Add your completed service below to track total spending.</p>
+
+  <form id="logform" class="box1">
+      <div class="formrow">
+        <div class="inpgrp">
+          <label for="ldate">Service Date:</label>
+          <input type="date" id="ldate" required>
+        </div>
+
+        <div class="inpgrp">
+          <label for="lbike">Vehicle:</label>
+          <select id="lbike">
+          <option value="Honda Activa 6G">Honda Activa 6G (Scooter)</option>
+        <option value="TVS Jupiter 110">TVS Jupiter 110 (Scooter)</option>
+          <option value="Suzuki Access 125">Suzuki Access 125 (Scooter)</option>
+          <option value="TVS Ntorq 125">TVS Ntorq 125 (Scooter)</option>
+        <option value="Suzuki Burgman 125">Suzuki Burgman 125 (Scooter)</option>
+          <option value="Yamaha Aerox 155">Yamaha Aerox 155 (Scooter)</option>
+
+          <option value="Hero Splendor+">Hero Splendor+ (Commuter)</option>
+        <option value="Bajaj Platina 110">Bajaj Platina 110 (Commuter)</option>
+          <option value="Honda Shine 125">Honda Shine 125 (Commuter)</option>
+          <option value="TVS Raider 125">TVS Raider 125 (Commuter)</option>
+        <option value="Hero Xtreme 125R">Hero Xtreme 125R (Commuter)</option>
+
+          <option value="Bajaj Pulsar 150">Bajaj Pulsar 150 (Naked)</option>
+          <option value="TVS Apache RTR 160 4V">TVS Apache RTR 160 4V (Naked)</option>
+        <option value="Yamaha MT-15 V2">Yamaha MT-15 V2 (Naked)</option>
+          <option value="Yamaha R15 V4">Yamaha R15 V4 (Sports)</option>
+          <option value="KTM 200 Duke">KTM 200 Duke (Naked)</option>
+        <option value="Bajaj Pulsar N250">Bajaj Pulsar N250 (Naked)</option>
+          <option value="Suzuki Gixxer SF 250">Suzuki Gixxer SF 250 (Sports)</option>
+
+          <option value="RE Classic 350">RE Classic 350 (Cruiser)</option>
+        <option value="Honda H'ness CB350">Honda H'ness CB350 (Cruiser)</option>
+          <option value="Triumph Speed 400">Triumph Speed 400 (Roadster)</option>
+          <option value="KTM 390 Duke">KTM 390 Duke (Naked)</option>
+        <option value="RE Himalayan 450">RE Himalayan 450 (Adventure)</option>
+          <option value="Aprilia RS 457">Aprilia RS 457 (Sports)</option>
+          </select>
+        </div>
+
+        <div class="inpgrp">
+          <label for="lkm">Odometer (km):</label>
+          <input type="number" id="lkm" placeholder="e.g. 8500" min="1" required>
+        </div>
+      </div>
+
+      <div class="formrow">
+        <div class="inpgrp">
+          <label for="lwork">Work Done / Parts Changed:</label>
+          <input type="text" id="lwork" placeholder="e.g. Engine oil and air filter" required>
+        </div>
+
+        <div class="inpgrp">
+          <label for="lcost">Total Cost (Rs):</label>
+          <input type="number" id="lcost" placeholder="e.g. 950" min="0" required>
+        </div>
+      </div>
+
+      <button type="submit" class="mainbtn">Add Record</button>
+      <p id="lmsg" class="errtxt"></p>
+  </form>
+
+
+  <div class="tblbox">
+      <table id="logtbl">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Vehicle</th>
+            <th>Odometer</th>
+            <th>Work Done</th>
+            <th>Cost (Rs)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="logbody">
+        </tbody>
+      </table>
+      <p id="logsum" class="billtxt"></p>
+  </div>
+</section>
+
+</main>
+
+
+<a href="#top" class="topbtn">Top ↑</a>
+
+<!-- bottom -->
+<footer class="foot">
+  <p>MotoCare - Two-Wheeler Maintenance &amp; Running Cost Advisor</p>
+  <p>Web Development Mini Project (2026FSWD100) | Static HTML5, CSS3 &amp; JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
